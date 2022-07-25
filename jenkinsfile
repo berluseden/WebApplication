@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://dev.azure.com/berluseden/_git/Jenkins'
+        git 'https://github.com/berluseden/WebApplication.git'
       }
     }
 
