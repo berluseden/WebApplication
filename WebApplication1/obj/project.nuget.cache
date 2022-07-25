@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I5y41pqncpS9kAbaLqMGRO5SwQTU8GbmyQGm1Q8r8IPKVGTHlQ17r7iqrPD5EFviyANTItUTQ1V+Ex05lgoiTA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\eden.berlus\\.vscode\\Jenkins\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eden.berlus\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
