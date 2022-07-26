@@ -1,22 +1,21 @@
-
-apiVersion: apps/v1
+apiVersion: v1
 kind: Deployment
 metadata:
-  name: jenkinsdeployment
+  name: appdeployment
   labels:
-    app: semilla
+    app: appv1
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: semilla
   template:
     metadata:
       labels:
-        app: semilla
+        app: appv1
     spec:
       containers:
-      - name: semilla
+      - name: appv1
         image: berluseden/demojenkins:latest
         imagePullPolicy: Always
         ports:
@@ -28,11 +27,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: semilla
+  name: appv1
   annotations:
     
   labels:
-    app: semilla
+    app: appv1
 spec:
   type: LoadBalancer
   ports:
@@ -41,5 +40,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: semilla
+    app: appv1
   sessionAffinity: None
